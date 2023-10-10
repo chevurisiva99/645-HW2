@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Siva Chevuri G01394013 -->
+  <!-- Main survey page -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- heading -->
+    <title>GMU-Department of Computer Science Survey</title>
+  </head>
+
+  <!-- body content -->
+
+  <body>
+    <!-- Textboxes for survey -->
+    <br />
+    <center>
+      <p class="h1">Student Survey Form</p>
+    </center>
+    <div class="wholediv">
+      <form id="surveyForm">
+        <div class="form-group row">
+          <label for="fname" class="col-sm-6 col-form-label"
+            >First Name<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="fname"
+              placeholder="First Name"
+              required
+              autofocus
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lname" class="col-sm-6 col-form-label"
+            >Last Name<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="lname"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="streetaddress" class="col-sm-6 col-form-label"
+            >Street Address<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="streetaddress"
+              placeholder="Street Address"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="city" class="col-sm-6 col-form-label"
+            >City<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="city"
+              placeholder="City"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="state" class="col-sm-6 col-form-label"
+            >State<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="state"
+              placeholder="State"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="zip" class="col-sm-6 col-form-label"
+            >Zip Code<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="zip"
+              placeholder="Zip Code"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="phone" class="col-sm-6 col-form-label"
+            >Telephone<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="phone"
+              placeholder="phone"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="email" class="col-sm-6 col-form-label"
+            >E-mail<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="datesurvey" class="col-sm-6 col-form-label"
+            >Date of Survey<span class="required-field"></span
+          ></label>
+          <div class="col-sm-6">
+            <p class="form-control" id="datesurvey">
+              <script>
+                document.write(new Date().toLocaleDateString());
+              </script>
+            </p>
+          </div>
+        </div>
+        <!-- Checkboxes -->
+        <div class="form-group row">
+          <p class="col-sm-6">What did you like about the university?</p>
+          <div class="col-sm-6">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" />
+              <label class="form-check-label" for="gridCheck1">
+                Students
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck2" />
+              <label class="form-check-label" for="gridCheck2">
+                location
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck3" />
+              <label class="form-check-label" for="gridCheck3"> Campus </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck4" />
+              <label class="form-check-label" for="gridCheck4">
+                Atmosphere
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck5" />
+              <label class="form-check-label" for="gridCheck5"> Dorms </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck6" />
+              <label class="form-check-label" for="gridCheck6"> Sports </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Radio buttons -->
+
+        <fieldset class="form-group">
+          <div class="row">
+            <p class="col-form-label col-sm-6 pt-0">
+              How did you became interested in the university?
+            </p>
+            <div class="col-sm-6">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="gridRadios1">
+                  Friends
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="gridRadios2">
+                  Television
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="gridRadios3">
+                  Internet
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios4"
+                  value="option4"
+                />
+                <label class="form-check-label" for="gridRadios4">
+                  Others
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group row">
+          <label for="addcomments" class="col-sm-6 col-form-label"
+            >Additional Comments</label
+          >
+          <div class="col-sm-6">
+            <textarea
+              class="form-control"
+              id="addcomments"
+              placeholder="Comments"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="numberData" class="col-sm-6 col-form-label">Raffle</label>
+          <div class="col-sm-6">
+            <input
+              type="textbox"
+              class="form-control"
+              id="numberData"
+              placeholder="Enter Ten Comma Seperated Numbers"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="dropdownMenuButton" class="col-sm-6 col-form-label">
+            <!-- Dropdown  -->
+            What is the likelihood of you recommending this school to other
+            prospective students?
+          </label>
+          <div class="col-sm-6">
+            <select class="form-control" id="dropdownMenuButton">
+              <option selected>Open this select menu</option>
+              <option value="1">Very Likely</option>
+              <option value="2">Likely</option>
+              <option value="3">Unlikely</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- form submit button -->
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-success successbutton">
+              Submit
+            </button>
+            <button type="reset" class="btn btn-success failbutton">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="rafflecheck.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
