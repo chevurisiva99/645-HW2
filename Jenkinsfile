@@ -33,7 +33,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    sh "kubectl --context=default -n default set image deployment/workload1 container-0=sivachevuri22/webappimage:${TIMESTAMP}"
+                    sh "kubectl --context=hw2-rancher-cluster -n default set image deployment/workload1 container-0=sivachevuri22/webappimage:${TIMESTAMP}"
                 }
             }
         }
