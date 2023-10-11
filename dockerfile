@@ -1,17 +1,15 @@
-# Use Tomcat base image
-FROM tomcat:9.0-jdk15
+# Use an existing image as a base
+FROM nginx:latest
 
-# Set working directory
-WORKDIR /usr/local/tomcat
+# Copy files into the image
+COPY ./part2survey.html /usr/share/nginx/html/
+COPY ./styles.css /usr/share/nginx/html/
+COPY ./rafflecheck.js /usr/share/nginx/html/
 
-# Remove existing apps in Tomcat
-RUN rm -rf ./webapps/*
+WORKDIR /usr/share/nginx/html
 
-# Copy WAR file into Tomcat webapps directory
-COPY part2.war ./webapps/part2.war
-
-# Expose port
+# Expose port 80
 EXPOSE 80
 
-# Start Tomcat server
-CMD ["catalina.sh", "run"]
+# Run nginx server
+CMD ["nginx", "-g", "daemon off;"]
