@@ -1,5 +1,5 @@
 # Use Tomcat base image
-FROM tomcat:9.0-jdk11
+FROM tomcat:9.0-jdk15
 
 # Set working directory
 WORKDIR /usr/local/tomcat
@@ -8,7 +8,7 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf ./webapps/*
 
 # Copy WAR file into Tomcat webapps directory
-COPY ./part2.war ./webapps/part2.war
+COPY part2.war ./webapps/part2.war
 
 # Expose port
 EXPOSE 80
