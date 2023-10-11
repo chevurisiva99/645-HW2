@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers {
+        githubPush()
+    }
     environment {
         TIMESTAMP = "${new Date().format('yyyyMMddHHmmss', TimeZone.getTimeZone('UTC'))}"
         KUBECONFIG = '/var/lib/jenkins/.kube/config.yaml'
@@ -30,7 +33,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    sh "kubectl --context=hw2-rancher-cluster -n default set image deployment/workload1 container-0=sivachevuri22/webappimage:${TIMESTAMP}"
+                    sh "kubectl --context=default -n default set image deployment/workload1 container-0=sivachevuri22/webappimage:${TIMESTAMP}"
                 }
             }
         }
